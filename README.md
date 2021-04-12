@@ -33,7 +33,7 @@ int main(int argc,char const*argv[])
 2、输出大于给定自然数n的最小素数
 #include<stdio.h>
 
-int IsPrime(int a)；
+int IsPrime(int a);
 
 int main(int argc,char const*argv[])
 {
@@ -191,7 +191,7 @@ int IsPrime(double x)
 }
 总结：
 ·循环累乘求积可以避免由于频繁调用pow函数而产生的额外运行时间。
-·素数判断从2到sqrt(x)即可，需要#include<math.h.
+·素数判断从2到sqrt(x)即可，需要#include<math.h>
 ·当i超过30以后，2^i-1的值会很大，不能用long型变量来存储，必须使用double类型来存储。
 ·对于double类型变量x（不是整型）不能执行求余运算，即不能用x%i == 0来判断x是否能被i整除，可以使用x/i == (long long)(x/i)来判断x是否能被i整除。
 
